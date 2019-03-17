@@ -1,0 +1,18 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Ford",
+      "date": "12.12.06",
+      "model": "Mondeo",
+      "isSold": false
+    },
+    {
+      "id": 2,
+      "name": "Audi",
+      "date": "04.05.12",
+      "model": "RX6",
+      "isSold": false
+    }
+  ]
+}
