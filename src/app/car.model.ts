@@ -3,7 +3,7 @@ export class Car {
     public name: string,
     public date: string,
     public model: string,
-    public isSold: boolean = false,
+    public isSold = false,
     public id?: number
   ) {}
 }

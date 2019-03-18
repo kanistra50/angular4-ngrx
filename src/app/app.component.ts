@@ -1,18 +1,14 @@
-import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
-import {Cars} from './car.model';
+import {Component} from '@angular/core';
+import {Car} from './car.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  public carState: Observable<Cars>
-
-  // constructor(private store: Store<AppState>) {}
-
-  ngOnInit() {
-    // this.carState = this.store.select('carPage')
-  }
+export class AppComponent  {
+  public cars: Car[] = [
+    new Car('Ford', '12.12.12', 'Focus', false, 1),
+    new Car('Audi', '09.08.11', 'A4', false, 2)
+  ];
 }
