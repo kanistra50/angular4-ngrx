@@ -4,6 +4,7 @@
     type="text"
     class="form-control"
     id="car-name"
+    [(ngModel)]="carName"
     placeholder="Car Name">
 </div>
 
@@ -12,9 +13,10 @@
   <input
     type="text"
     class="form-control"
+    [(ngModel)]="carModel"
     id="car-model"
     placeholder="Car Model">
 </div>
 
-<button type="button" class="btn btn-outline-primary">Add Car</button>
-<button type="button" class="btn btn-outline-secondary">Load Cars</button>
+<button type="button" (click)="onAdd()" class="btn btn-outline-primary">Add Car</button>
+<button type="button" (click)="onLoad()" class="btn btn-outline-secondary">Load Cars</button>

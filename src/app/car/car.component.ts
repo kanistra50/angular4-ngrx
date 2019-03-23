@@ -1,7 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Car} from '../car.model';
 
-// @ts-ignore
 @Component({
   selector: 'app-car',
   templateUrl: './car.component.html',
@@ -9,6 +8,13 @@ import {Car} from '../car.model';
 })
 export class CarComponent {
   @Input() car: Car;
+  @Output() deleteCar = new EventEmitter();
 
+  onBuy() {
+    this.car.isSold = true;
+  }
 
+  onDelete() {
+    this.deleteCar.emit();
+  }
 }
