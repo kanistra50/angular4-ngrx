@@ -1,5 +1,4 @@
 import {Car} from '../car.model';
-import {Action} from '@ngrx/store';
 import {AddCar, CAR_ACTION} from './car.action';
 
 const initialState = {
