@@ -18,7 +18,6 @@ export class AppComponent  implements OnInit {
   ngOnInit() {
     // this.store.select('carPage').subscribe(({cars}) => {
     //   this.cars = cars;
-    //   console.log(cars);
     // });
 
     this.carState = this.store.select('carPage');
