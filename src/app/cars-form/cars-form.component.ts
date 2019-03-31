@@ -4,6 +4,7 @@ import * as moment from 'moment';
 import {AppState} from '../redux/app.state';
 import {Car} from '../car.model';
 import {AddCar} from '../redux/car.action';
+import {CarsService} from '../cars.service';
 
 @Component({
   selector: 'app-cars-form',
@@ -11,16 +12,18 @@ import {AddCar} from '../redux/car.action';
   styleUrls: ['./cars-form.component.css']
 })
 export class CarsFormComponent {
-  carName: string = '';
-  carModel: string = '';
-  id: number = 2;
+  carName = '';
+  carModel = '';
+  id = 2;
 
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>, private carsService: CarsService) { }
 
   onAdd() {
     this.id = ++this.id;
 
-    if (this.carModel === '' || this.carName === '') return
+    if (this.carModel === '' || this.carName === '') {
+      return;
+    }
     const car = new Car(
       this.carName,
       moment().format('DD.MM.YY'),
@@ -35,7 +38,7 @@ export class CarsFormComponent {
     this.carModel = '';
   }
 
-  onLoad(){
-    // TODO;
+  onLoad() {
+    this.carsService.loadCars();
   }
 }

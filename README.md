@@ -32,8 +32,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Actions:
-Run App: 'npm start';
+Run App: 'npm start'
 
 ## Imports:
 'npm i moment --save'
+
 'npm i @ngrx/store --save'
+
+'npm i --save-dev json-server'
+(global also 'npm i -g json-server')
+
+'npm i --save-dev concurrently'

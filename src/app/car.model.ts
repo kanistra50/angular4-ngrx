@@ -9,5 +9,5 @@ export class Car {
 }
 
 export interface Cars {
-  cars: Car[]
+  cars: Car[];
 }
