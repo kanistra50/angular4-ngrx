@@ -43,3 +43,5 @@ Run App: 'npm start'
 (global also 'npm i -g json-server')
 
 'npm i --save-dev concurrently'
+
+'npm i @ngrx/effects --save' 

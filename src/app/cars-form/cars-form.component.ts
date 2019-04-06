@@ -3,7 +3,6 @@ import {Store} from '@ngrx/store';
 import * as moment from 'moment';
 import {AppState} from '../redux/app.state';
 import {Car} from '../car.model';
-import {AddCar} from '../redux/car.action';
 import {CarsService} from '../cars.service';
 
 @Component({
@@ -14,25 +13,22 @@ import {CarsService} from '../cars.service';
 export class CarsFormComponent {
   carName = '';
   carModel = '';
-  id = 2;
+  // id = 2;
 
-  constructor(private store: Store<AppState>, private carsService: CarsService) { }
+  constructor(private carsService: CarsService) { }
 
   onAdd() {
-    this.id = ++this.id;
+    // this.id = ++this.id;
 
     if (this.carModel === '' || this.carName === '') {
       return;
     }
-    const car = new Car(
-      this.carName,
-      moment().format('DD.MM.YY'),
-      this.carModel,
-      false,
-      this.id
-    );
 
-    this.store.dispatch(new AddCar(car));
+    const date = moment().format('DD.MM.YY')
+    const car = new Car(this.carName, date, this.carModel);
+
+    // this.store.dispatch(new AddCar(car));
+    this.carsService.addCar(car);
 
     this.carName = '';
     this.carModel = '';
