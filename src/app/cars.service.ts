@@ -8,6 +8,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import {Observable} from 'rxjs/Observable';
 
+
 @Injectable()
 export class CarsService {
   static BASE_URL = 'http://localhost:3000/';
@@ -19,8 +20,7 @@ export class CarsService {
   }
 
   loadCars(): void {
-    this.preloadCars().toPromise()
-      .then((cars: Car[]) => {
+    this.preloadCars().toPromise().then((cars: Car[]) => {
         this.store.dispatch(new LoadCars(cars));
       });
   }

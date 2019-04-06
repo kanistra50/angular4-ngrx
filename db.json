@@ -1,20 +1,6 @@
 {
   "cars": [
     {
-      "id": 1,
-      "name": "Ford",
-      "date": "12.12.2004",
-      "model": "Mondeo",
-      "isSold": true
-    },
-    {
-      "name": "Tesla",
-      "date": "06.04.19",
-      "model": "Model S",
-      "isSold": false,
-      "id": 3
-    },
-    {
       "name": "Mersedes",
       "date": "06.04.19",
       "model": "Bens",
@@ -22,11 +8,18 @@
       "id": 4
     },
     {
-      "name": "Ford",
+      "name": "Siat",
       "date": "06.04.19",
-      "model": "Focus",
+      "model": "Ibiza",
+      "isSold": true,
+      "id": 6
+    },
+    {
+      "name": "Tesla",
+      "date": "06.04.19",
+      "model": "Model S",
       "isSold": false,
-      "id": 5
+      "id": 7
     }
   ]
 }

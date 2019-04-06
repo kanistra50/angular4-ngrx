@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
-import {Store} from '@ngrx/store';
 import * as moment from 'moment';
-import {AppState} from '../redux/app.state';
 import {Car} from '../car.model';
 import {CarsService} from '../cars.service';
 
