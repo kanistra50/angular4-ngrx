@@ -1,9 +1,31 @@
 # Angular 4 NgRx (from webformyself)
-https://coursehunterhttps://coursehunters.net/course/angular-4-ngrxs.net/course/angular-4-ngrx
+https://coursehunters.net/course/angular-4-ngrxs.net/course/angular-4-ngrx
 
 # Ngrx
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+
+## Actions:
+Run App: 'npm start'
+
+## Imports and Dependencies:
+'npm i --save moment'
+
+'npm i --save @ngrx/store'
+
+'npm i --save-dev json-server'
+(also global installing 'npm i -g json-server')
+
+'npm i --save-dev concurrently'
+
+'npm i --save @ngrx/effects' 
+
+'npm i --save @ngrx/router-store'
+
+'npm i --save @ngrx/router-devtools'
+
+## Chrome extension:
+Redux DevTools -> http://extension.remotedev.io
 
 ## Development server
 
@@ -29,19 +51,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
-## Actions:
-Run App: 'npm start'
-
-## Imports:
-'npm i moment --save'
-
-'npm i @ngrx/store --save'
-
-'npm i --save-dev json-server'
-(global also 'npm i -g json-server')
-
-'npm i --save-dev concurrently'
-
-'npm i @ngrx/effects --save' 

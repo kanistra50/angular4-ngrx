@@ -1,13 +1,6 @@
 {
   "cars": [
     {
-      "name": "Mersedes",
-      "date": "06.04.19",
-      "model": "Bens",
-      "isSold": false,
-      "id": 4
-    },
-    {
       "name": "Siat",
       "date": "06.04.19",
       "model": "Ibiza",
