@@ -1,18 +1,18 @@
 {
   "cars": [
     {
-      "name": "Siat",
-      "date": "06.04.19",
-      "model": "Ibiza",
-      "isSold": true,
-      "id": 6
+      "name": "Nissan",
+      "date": "07.04.19",
+      "model": "Almera",
+      "isSold": false,
+      "id": 9
     },
     {
-      "name": "Tesla",
-      "date": "06.04.19",
-      "model": "Model S",
+      "name": "Jeep",
+      "date": "07.04.19",
+      "model": "Jeep",
       "isSold": false,
-      "id": 7
+      "id": 10
     }
   ]
 }

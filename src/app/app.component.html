@@ -6,7 +6,6 @@
     <app-car
       [car]="c"
       *ngFor="let c of (carState | async).cars"
-      (deleteCar)="onDelete(c)"
     ></app-car>
   </div>
 

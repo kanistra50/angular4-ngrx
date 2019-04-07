@@ -11,21 +11,16 @@ import {CarsService} from '../cars.service';
 export class CarsFormComponent {
   carName = '';
   carModel = '';
-  // id = 2;
 
   constructor(private carsService: CarsService) { }
 
   onAdd() {
-    // this.id = ++this.id;
-
     if (this.carModel === '' || this.carName === '') {
       return;
     }
 
     const date = moment().format('DD.MM.YY')
     const car = new Car(this.carName, date, this.carModel);
-
-    // this.store.dispatch(new AddCar(car));
     this.carsService.addCar(car);
 
     this.carName = '';

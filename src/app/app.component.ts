@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Car, Cars} from './car.model';
+import {Cars} from './car.model';
 import {Store} from '@ngrx/store';
-import {AppState} from './redux/app.state';
+import {AppState, CAR_PAGE} from './redux/app.state';
 import {Observable} from 'rxjs/Observable';
 
 @Component({
@@ -9,22 +9,12 @@ import {Observable} from 'rxjs/Observable';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  implements OnInit {
-  // public cars: Car[] = [];
+export class AppComponent implements OnInit {
   public carState: Observable<Cars>;
 
   constructor(private store: Store<AppState>) {}
 
   ngOnInit() {
-    // this.store.select('carPage').subscribe(({cars}) => {
-    //   this.cars = cars;
-    // });
-
-    this.carState = this.store.select('carPage');
-  }
-
-
-  onDelete(car: Car) {
-    // this.cars = this.cars.filter(c => c.id !== car.id);
+    this.carState = this.store.select(CAR_PAGE);
   }
 }
